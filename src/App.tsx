@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'reset-css';
+import NavbarScroller from './components/NavbarScroller';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const navigation = {
+    brand: { name: 'Beam\'s Portfolio', to: '/' },
+    links: [
+        { name: 'HOME', to: '/home' },
+        { name: 'ABOUT', to: '/about' },
+        { name: 'WORK', to: '/work' },
+        { name: 'CONTACT', to: '/contact' },
+    ],
+};
+
+class App extends Component {
+    public render() {
+        const { brand, links } = navigation;
+        return (
+            <div className="App">
+                <NavbarScroller brand={brand} links={links} />
+            </div>
+        );
+    }
 }
 
 export default App;
