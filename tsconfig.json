@@ -26,7 +26,8 @@
     "incremental": true, // Enable incremental compilation by reading/writing information from prior compilations to a file on disk
   },
   "include": [
-    "src"
+    "src",
+    "src/react-app-env.d.ts"
   ],
   "exclude": ["node_modules", "build"]
 }

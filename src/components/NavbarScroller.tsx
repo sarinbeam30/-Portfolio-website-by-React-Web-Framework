@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
-import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.css';
+
+/** IMPORT IMAGE */
+import profile_image from '../Image/profile-picture.jpg';
 
 const NavbarScroller = (props: { brand: { name: string; to: string }; links: Array<{ name: string; to: string }> }) => {
     const { brand, links } = props;
@@ -21,6 +23,7 @@ const NavbarScroller = (props: { brand: { name: string; to: string }; links: Arr
                     </div>
                 </div>
             </nav>
+            <img src={profile_image} />
         </div>
     );
 };
