@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 /** IMPORT IMAGE */
 import profile_image from '../Image/profile-picture.jpg';
+
+/** IMPORT SCSS FILE */
 import styles from '../Stylesheet/NavbarScrollerStyleSheet.module.scss';
 
 const NavbarScroller = (props: { brand: { name: string; to: string }; links: Array<{ name: string; to: string }> }) => {
