@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 /** IMPORT IMAGE */
 import profile_image from '../Image/profile-picture.jpg';
+import styles from '../Stylesheet/NavbarScrollerStyleSheet.module.scss';
 
 const NavbarScroller = (props: { brand: { name: string; to: string }; links: Array<{ name: string; to: string }> }) => {
     const { brand, links } = props;
@@ -23,7 +24,7 @@ const NavbarScroller = (props: { brand: { name: string; to: string }; links: Arr
                     </div>
                 </div>
             </nav>
-            <img src={profile_image} />
+            <img src={profile_image} className={styles.profile_image} />
         </div>
     );
 };
