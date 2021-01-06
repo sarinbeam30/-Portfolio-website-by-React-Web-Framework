@@ -1,9 +1,12 @@
 // @import '../default-styles.scss';
 
-
+// Initilaize variable
+$profile_image_width : 150px;
+$profile_image_height : 150px;
+$profile_image_border_radius : 50%;
 
 .profile_image {
-    width: 150px;
-    height: 150px;
-	background-color: red ;
+    width: $profile_image_width;
+    height: $profile_image_height;
+	border-radius: $profile_image_border_radius;
 }

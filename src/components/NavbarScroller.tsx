@@ -8,8 +8,8 @@ import profile_image from '../Image/profile-picture.jpg';
 /** IMPORT SCSS FILE */
 import styles from '../Stylesheet/NavbarScrollerStyleSheet.module.scss';
 
-const NavbarScroller = (props: { brand: { name: string; to: string }; links: Array<{ name: string; to: string }> }) => {
-    const { brand, links } = props;
+const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) => {
+    const { links } = props;
     const NavLinks: any = () =>
         links.map((link: { name: string; to: string }) => (
             <li key={link.name} className="p-2 bd-highlight" style={{ listStyleType: 'none' }}>
@@ -17,16 +17,25 @@ const NavbarScroller = (props: { brand: { name: string; to: string }; links: Arr
             </li>
         ));
     return (
-        <div>
-            <nav className="navbar navbar-light bg-light justify-content-between">
-                <div className="container-fluid">
-                    <a href={brand.to}>{brand.name}</a>
-                    <div className="d-flex">
+        <div className="d-flex flex-row">
+            <nav id="navbar-scrollspy" className="navbar navbar-light bg-light container-small">
+                <div className="d-flex flex-column bd-highlight mb-3">
+                    <a className="navbar-brand d-flex flex-column align-items-md-center" href="#">
+                        <img src={profile_image} className={styles.profile_image} />
+                        <div>Sarin Wanichwasin</div>
+                        <div>Software Engineering Student</div>
+                    </a>
+                    <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center">
                         <NavLinks />
-                    </div>
+                    </nav>
                 </div>
             </nav>
-            <img src={profile_image} className={styles.profile_image} />
+
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabIndex={0}>
+                <h4 id="item-1">Item 1</h4>
+                <p>Blaaaaa........</p>
+            </div>
+
         </div>
     );
 };
