@@ -12,7 +12,7 @@ const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) =
     const { links } = props;
     const NavLinks: any = () =>
         links.map((link: { name: string; to: string }) => (
-            <li key={link.name} className="p-2 bd-highlight" style={{ listStyleType: 'none' }}>
+            <li key={link.name} className="p-2 bd-highlight align-items-md-center" style={{ listStyleType: 'none' }}>
                 <a href={link.to}>{link.name}</a>
             </li>
         ));
@@ -20,10 +20,14 @@ const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) =
         <div className="d-flex flex-row">
             <nav id="navbar-scrollspy" className="navbar navbar-light bg-light container-small">
                 <div className="d-flex flex-column bd-highlight mb-3">
-                    <a className="navbar-brand d-flex flex-column align-items-md-center" href="#">
+                    <a
+                        className="navbar-brand d-flex flex-column align-items-md-center"
+                        href="#"
+                        style={{ marginRight: 0 }}
+                    >
                         <img src={profile_image} className={styles.profile_image} />
                         <div>Sarin Wanichwasin</div>
-                        <div>Software Engineering Student</div>
+                        <div className={styles.role_descrption}>Software Engineering Student </div>
                     </a>
                     <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center">
                         <NavLinks />
@@ -35,7 +39,6 @@ const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) =
                 <h4 id="item-1">Item 1</h4>
                 <p>Blaaaaa........</p>
             </div>
-
         </div>
     );
 };

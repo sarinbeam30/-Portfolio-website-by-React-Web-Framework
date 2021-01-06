@@ -4,9 +4,20 @@
 $profile_image_width : 150px;
 $profile_image_height : 150px;
 $profile_image_border_radius : 50%;
+$profile_image_margin : 30px auto;
+
+a.navbar-brand {
+    background-color: red;
+    margin-right: 0px;
+}
 
 .profile_image {
     width: $profile_image_width;
     height: $profile_image_height;
-	border-radius: $profile_image_border_radius;
+    border-radius: $profile_image_border_radius;
+    margin : $profile_image_margin;
+}
+
+.role_descrption {
+    margin-bottom: 2em;
 }
