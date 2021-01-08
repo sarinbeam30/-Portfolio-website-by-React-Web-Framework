@@ -1,0 +1,42 @@
+// Import Google Font
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+// Initilaize Variable
+$wallpaper_1_width : 100%;
+$wallpaper_1_height : 100%;
+
+.home_layout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5% auto;
+}
+
+.wallpaper_1 {
+    width: $wallpaper_1_width;
+    height: $wallpaper_1_height;
+}
+
+
+
+.home_text_layout {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.25%;
+}
+
+.home_text {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.3;
+    font-size: 50px;
+}
+
+
+
+
+
