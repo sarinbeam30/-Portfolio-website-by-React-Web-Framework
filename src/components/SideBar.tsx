@@ -12,30 +12,27 @@ const SideBarScroller = (props: { links: Array<{ name: string; to: string }> }) 
     const { links } = props;
     const NavigationLinks: any = () =>
         links.map((link: { name: string; to: string }) => (
-            <li key={link.name} className="p-2 bd-highlight align-items-md-center h-100" style={{ listStyleType: 'none' }}>
+            <li key={link.name} className="p-2 bd-highlight align-items-md-center" style={{ listStyleType: 'none' }}>
                 <a href={link.to}>{link.name}</a>
             </li>
         ));
     return (
-        <div className="d-flex flex-row h-100">
-            <nav id="navbar-scrollspy" className="navbar navbar-light bg-light container-small h-100">
-                <div className="d-flex flex-column bd-highlight mb-3">
-                    <a
-                        className="navbar-brand d-flex flex-column align-items-md-center"
-                        href="#"
-                        style={{ marginRight: 0 }}
-                    >
-                        <img src={profile_image} className={styles.profile_image} />
-                        <div>Sarin Wanichwasin</div>
-                        <div className={styles.role_descrption}>Software Engineering Student </div>
-                    </a>
-                    <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center h-100">
-                        <NavigationLinks />
-                    </nav>
-                </div>
-            </nav>
-
-        </div>
+        <nav id="navbar-scrollspy" className="bg-light h-100 position-fixed navbar navbar-light">
+            <div className="d-flex flex-column bd-highlight mb-3">
+                <a
+                    className="navbar-brand d-flex flex-column align-items-md-center"
+                    href="#"
+                    style={{ marginRight: 0 }}
+                >
+                    <img src={profile_image} className={styles.profile_image} />
+                    <div>Sarin Wanichwasin</div>
+                    <div className={styles.role_descrption}>Software Engineering Student </div>
+                </a>
+                <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center">
+                    <NavigationLinks />
+                </nav>
+            </div>
+        </nav>
     );
 };
 

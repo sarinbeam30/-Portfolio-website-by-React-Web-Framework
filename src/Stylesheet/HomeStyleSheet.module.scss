@@ -2,23 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 // Initilaize Variable
-$wallpaper_1_width : 100%;
-$wallpaper_1_height : 100%;
+$wallpaper_1_width : 1150px;
+$wallpaper_1_height : 500px;
 
 .home_layout {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 1.5% auto;
 }
 
 .wallpaper_1 {
-    width: $wallpaper_1_width;
-    height: $wallpaper_1_height;
+    max-width: $wallpaper_1_width;
+    max-height: $wallpaper_1_height;
 }
-
 
 
 .home_text_layout {

@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+
+/** IMPORT SCSS FILE */
+import styles from '../Stylesheet/AboutStyleSheet.module.scss';
+
+export default class About extends Component {
+    public render() {
+        return (
+            <div className={styles.about_layout} id="about">
+                <p className={styles.Heading_1}>ABOUT ME</p>
+                <p className={styles.Heading_2}>WHO AM I</p>
+                <p className={styles.about_content}>
+                    Hi I&apos;m Sarin Wanichwasin. At this moment, I&apos;m a forth-year student at KMITL. I&apos;m
+                    study about Software Engineering (International Program). Now, I&apos;m interested in frontend
+                    development, backend developemnt and Internet-Of-Things (IOT) stuff.
+                </p>
+            </div>
+        );
+    }
+}
