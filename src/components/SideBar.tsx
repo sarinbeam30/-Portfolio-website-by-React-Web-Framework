@@ -6,19 +6,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 import profile_image from '../Image/profile-picture.jpg';
 
 /** IMPORT SCSS FILE */
-import styles from '../Stylesheet/NavbarScrollerStyleSheet.module.scss';
+import styles from '../Stylesheet/SideBarStyleSheet.module.scss';
 
-const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) => {
+const SideBarScroller = (props: { links: Array<{ name: string; to: string }> }) => {
     const { links } = props;
-    const NavLinks: any = () =>
+    const NavigationLinks: any = () =>
         links.map((link: { name: string; to: string }) => (
-            <li key={link.name} className="p-2 bd-highlight align-items-md-center" style={{ listStyleType: 'none' }}>
+            <li key={link.name} className="p-2 bd-highlight align-items-md-center h-100" style={{ listStyleType: 'none' }}>
                 <a href={link.to}>{link.name}</a>
             </li>
         ));
     return (
-        <div className="d-flex flex-row">
-            <nav id="navbar-scrollspy" className="navbar navbar-light bg-light container-small">
+        <div className="d-flex flex-row h-100">
+            <nav id="navbar-scrollspy" className="navbar navbar-light bg-light container-small h-100">
                 <div className="d-flex flex-column bd-highlight mb-3">
                     <a
                         className="navbar-brand d-flex flex-column align-items-md-center"
@@ -29,18 +29,14 @@ const NavbarScroller = (props: { links: Array<{ name: string; to: string }> }) =
                         <div>Sarin Wanichwasin</div>
                         <div className={styles.role_descrption}>Software Engineering Student </div>
                     </a>
-                    <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center">
-                        <NavLinks />
+                    <nav className="nav nav-pills flex-column flex-grow-1 align-items-md-center h-100">
+                        <NavigationLinks />
                     </nav>
                 </div>
             </nav>
 
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabIndex={0}>
-                <h4 id="item-1">Item 1</h4>
-                <p>Blaaaaa........</p>
-            </div>
         </div>
     );
 };
 
-export default NavbarScroller;
+export default SideBarScroller;
