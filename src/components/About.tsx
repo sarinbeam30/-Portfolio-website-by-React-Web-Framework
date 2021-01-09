@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
+/** IMPORT ANIMATE.CSS LIBRARY */
+// import Animate from 'animate.css-react';
+// import 'animate.css/animate.css';
+
 /** IMPORT SCSS FILE */
 import styles from '../Stylesheet/AboutStyleSheet.module.scss';
 

@@ -1,5 +1,6 @@
 /// <reference types="react-scripts" />
 
+// IMAGE
 declare module '*jpg' {
     const content: string;
     export default content;

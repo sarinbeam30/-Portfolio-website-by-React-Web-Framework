@@ -1,25 +1,36 @@
+// Import Google Font
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to   { opacity: 1; transform: translateX(0) }
+  }
+
 .about_layout {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: "";
     background-color: blanchedalmond;
     width: 100%;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 
 .Heading_1 {
+    animation: fadeInLeft .45s ;
     margin: 3.5% 0 1% 1.5%;
     letter-spacing: 7.5px;
 }
 
 .Heading_2 {
+    animation: fadeInLeft .65s ;
     margin: 0 0 0 1.5%;
     letter-spacing: 2.5px;
     font-weight: bolder;
 }
 
 .about_content {
+    animation: fadeInLeft 1s ;
     margin : 2% 0 0 1.5%;
     letter-spacing: 1.5px;
 }
