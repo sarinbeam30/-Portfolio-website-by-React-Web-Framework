@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './Home';
 import About from './About';
+import Project from './Project';
 
 /**  IMPORT IMAGE */
 //import wallpaper_1 from '../Image/wallpaper-1.jpg';
@@ -23,6 +24,7 @@ export default class Body extends Component {
             >
                 <Home />
                 <About />
+                <Project />
             </div>
         );
     }

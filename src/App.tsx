@@ -8,8 +8,14 @@ const navigation = {
     links: [
         { name: 'HOME', to: '#home' },
         { name: 'ABOUT', to: '#about' },
-        { name: 'WORK', to: '#work' },
+        { name: 'PROJECT', to: '#project' },
         { name: 'CONTACT', to: '#contact' },
+    ],
+};
+
+const project_array_list ={
+    project_list : [
+        { image: }
     ],
 };
 
