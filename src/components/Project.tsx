@@ -13,9 +13,18 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
-const Project = (
-    props :{}
-) => {
+const Project = (props: { ProjectArrayList: Array<{ image: string; label: string; caption: string }> }) => {
+    const { ProjectArrayList } = props;
+    const ProjectArrayListLoop: any = () =>
+        ProjectArrayList.map((project_array_list: { image: string; label: string; caption: string }) => (
+            <div key={project_array_list.label} className="carousel-item active">
+                <img src={project_array_list.image} className="d-block w-100" />
+                <div className="carousel-caption d-none d-md-block">
+                    <h5>{project_array_list.label}</h5>
+                    <p>{project_array_list.caption}</p>
+                </div>
+            </div>
+        ));
     return (
         <div className={styles.project_layout} id="project">
             <span className={styles.project_Heading_1}>PROJECT</span>
@@ -28,18 +37,10 @@ const Project = (
             </div>
 
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img />
-                    <div className="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                </div>
+                <ProjectArrayListLoop />
             </div>
         </div>
     );
 };
 
 export default Project;
-
-

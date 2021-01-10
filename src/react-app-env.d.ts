@@ -6,6 +6,11 @@ declare module '*jpg' {
     export default content;
 }
 
+declare module '*png' {
+    const content: string;
+    export default content;
+}
+
 // CSS
 declare module '*.module.css' {
     const classes: { [key: string]: string };

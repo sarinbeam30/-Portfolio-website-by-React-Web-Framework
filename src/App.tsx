@@ -13,12 +13,6 @@ const navigation = {
     ],
 };
 
-const project_array_list ={
-    project_list : [
-        { image: }
-    ],
-};
-
 class App extends Component {
     public render(): ReactElement {
         const { links } = navigation;
