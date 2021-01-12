@@ -36,7 +36,7 @@ export default class Body extends Component {
             >
                 <Home />
                 <About />
-                <Project ProjectArrayList={ProjectArrayList} />
+                {/* <Project ProjectArrayList={ProjectArrayList} /> */}
             </div>
         );
     }
