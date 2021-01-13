@@ -29,7 +29,7 @@ class App extends Component {
                     <div className="col-4 pl-0 pr-0">
                         <SideBar links={links} />
                     </div>
-                    <div className="col-8 pl-0 pr-0 w-100">
+                    <div className="pl-0 pr-0 w-100">
                         <Body />
                     </div>
                 </div>

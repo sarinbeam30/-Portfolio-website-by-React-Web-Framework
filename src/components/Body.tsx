@@ -19,6 +19,7 @@ const project_array_list = {
             image: IndoorPositioningSystemProjectImage,
             label: 'Indoor Positioing System Project [Senior Project]',
             caption: 'It is a project which you can find your current position in defined area',
+            index: 1,
         },
     ],
 };
@@ -36,7 +37,7 @@ export default class Body extends Component {
             >
                 <Home />
                 <About />
-                {/* <Project ProjectArrayList={ProjectArrayList} /> */}
+                <Project ProjectArrayList={ProjectArrayList} />
             </div>
         );
     }

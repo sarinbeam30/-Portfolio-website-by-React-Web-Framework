@@ -17,7 +17,7 @@ const SideBarScroller = (props: { links: Array<{ name: string; to: string }> }) 
             </li>
         ));
     return (
-        <nav id="navbar-scrollspy" className="bg-light h-100 position-fixed navbar navbar-light">
+        <nav id="navbar-scrollspy" className="bg-light h-100 position-fixed navbar navbar-light" style={{ zIndex: 2 }}>
             <div className="d-flex flex-column bd-highlight mb-3">
                 <a
                     className="navbar-brand d-flex flex-column align-items-md-center"
