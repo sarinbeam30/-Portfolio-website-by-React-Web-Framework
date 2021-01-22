@@ -1,69 +1,80 @@
-import React, { Component, useRef } from 'react';
+import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-
-/** IMPORT IMAGE */
-// import wallpaper_1 from '../Image/wallpaper-1.jpg';
+// import { CarouselApp } from './Carousel/carousel-app';
 
 /** IMPORT SCSS FILE */
 import styles from '../Stylesheet/ProjectStyleSheet.module.scss';
 
-/** IMPORT FONTAWESOMEICON */
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fas } from '@fortawesome/free-solid-svg-icons';
-// library.add(fas);
+/**  IMPORT IMAGE */
+import IndoorPositioningSystemProjectImage_1 from '../Image/Project/IndoorPositioningSystemPeoject_1.png';
+import IndoorPositioningSystemProjectImage_2 from '../Image/Project/IndoorPositioningSystemPeoject_2.png';
+import IndoorPositioningSystemProjectImage_3 from '../Image/Project/IndoorPositioningSystemPeoject_3.png';
 
-import styled from 'styled-components';
-import Carousel from './Carousel/Carousel';
-import SlideOne from './Carousel/SlideOne';
-import SlideTwo from './Carousel/SlideTwo';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Project = (props: {
     ProjectArrayList: Array<{ image: string; label: string; caption: string; index: number }>;
 }) => {
     const { ProjectArrayList } = props;
 
-    // const ProjectArrayListLoop: any = () =>
-    //     ProjectArrayList.map((project_array_list: { image: string; label: string; caption: string; index: number }) => (
-    //         <div key={project_array_list.label.toString()} className={styles.mySlides} ref={active}>
-    //             <img src={project_array_list.image} className={styles.image_setup} />
-    //             <span>{project_array_list.label}</span>
-    //             <span>{project_array_list.caption}</span>
-    //         </div>
-    //     ));
+    const responsive = {
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
 
-    // const CurrentSlideLoop: any = () =>
-    //     ProjectArrayList.map((project_array_list: { image: string; label: string; caption: string; index: number }) => (
-    //         <span
-    //             key={project_array_list.label.toString()}
-    //             className={styles.dot}
-    //             onClick={() => currentSlide(project_array_list.index)}
-    //         ></span>
-    //     ));
+    const ProjectArrayListLoop: any = () =>
+        ProjectArrayList.map((project_array_list: { image: string; label: string; caption: string; index: number }) => (
+            <div key={project_array_list.label.toString()} className={styles.image_carousel_layout}>
+                <img src={project_array_list.image} className={styles.project_image} />
+                <span>{project_array_list.label}</span>
+                <span>{project_array_list.caption}</span>
+            </div>
+        ));
+
     return (
-        <div className={styles.project_layout} id="project">
-            <span className={styles.project_Heading_1}>PROJECT</span>
-            {/* <div className={styles.slideshow_container}>
-                <ProjectArrayListLoop />
-                <a className={styles.prev} onClick={() => plusSlides(-1)}>
-                    &#10094;
-                </a>
-                <a className={styles.next} onClick={() => plusSlides(1)}>
-                    &#10095;
-                </a>
-            </div>
+        <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={false}
+            autoPlaySpeed={3000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={['tablet', 'mobile']}
+            // deviceType={this.props.deviceType}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-100-px"
+        >
 
-            <br></br>
-            <div style={{ textAlign: 'center' }}>
-                <CurrentSlideLoop />
-            </div> */}
-            <div>
-                <Carousel>
-                    <SlideOne />
-                    <SlideTwo />
-                </Carousel>
+            <div className={styles.image_carousel_layout}>
+                <span>Item 1</span>
+                <img src={IndoorPositioningSystemProjectImage_1} className={styles.project_image} />
             </div>
-        </div>
+            <div className={styles.image_carousel_layout}>
+                <span>Item 2</span>
+                <img src={IndoorPositioningSystemProjectImage_2} className={styles.project_image} />
+            </div>
+            <div className={styles.image_carousel_layout}>
+                <span>Item 3</span>
+                <img src={IndoorPositioningSystemProjectImage_3} className={styles.project_image} />
+            </div>
+        </Carousel>
     );
 };
 

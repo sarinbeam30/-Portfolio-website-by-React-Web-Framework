@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { Component, ReactElement } from 'react';
 import SideBar from './components/SideBar';
 import Body from './components/Body';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -17,13 +17,6 @@ class App extends Component {
     public render(): ReactElement {
         const { links } = navigation;
         return (
-            // <div className="d-flex flex-row flex-nowrap">
-            //     <SideBar links={links} />
-            //     <div className="flex-grow-1 align-self-stretch">
-            //         <Body />
-            //     </div>
-            // </div>
-
             <div className="container-fluid ml-0 mr-0 pr-0">
                 <div className="row mr-0">
                     <div className="col-4 pl-0 pr-0">

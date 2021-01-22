@@ -7,8 +7,8 @@ import About from './About';
 import Project from './Project';
 
 /**  IMPORT IMAGE */
-//import wallpaper_1 from '../Image/wallpaper-1.jpg';
-import IndoorPositioningSystemProjectImage from '../Image/Project/IndoorPositioningSystemPeoject.png';
+import IndoorPositioningSystemProjectImage_1 from '../Image/Project/IndoorPositioningSystemPeoject_1.png';
+import IndoorPositioningSystemProjectImage_2 from '../Image/Project/IndoorPositioningSystemPeoject_2.png';
 
 /** IMPORT SCSS FILE */
 import styles from '../Stylesheet/BodyStyleSheet.module.scss';
@@ -16,10 +16,18 @@ import styles from '../Stylesheet/BodyStyleSheet.module.scss';
 const project_array_list = {
     ProjectArrayList: [
         {
-            image: IndoorPositioningSystemProjectImage,
+            image: IndoorPositioningSystemProjectImage_1,
             label: 'Indoor Positioing System Project [Senior Project]',
-            caption: 'It is a project which you can find your current position in defined area',
+            caption:
+                'It is a project which you can find your current position in defined area. [Current Location Page]',
             index: 1,
+        },
+        {
+            image: IndoorPositioningSystemProjectImage_2,
+            label: 'Indoor Positioing System Project [Senior Project]',
+            caption:
+                'It is a project which you can find your current position in defined area. [Current Location Page]',
+            index: 2,
         },
     ],
 };
