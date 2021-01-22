@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { CarouselApp } from './Carousel/carousel-app';
 
 /** IMPORT SCSS FILE */
 import styles from '../Stylesheet/ProjectStyleSheet.module.scss';
 
-/**  IMPORT IMAGE */
-import IndoorPositioningSystemProjectImage_1 from '../Image/Project/IndoorPositioningSystemPeoject_1.png';
-import IndoorPositioningSystemProjectImage_2 from '../Image/Project/IndoorPositioningSystemPeoject_2.png';
-import IndoorPositioningSystemProjectImage_3 from '../Image/Project/IndoorPositioningSystemPeoject_3.png';
-
+/**  IMPORT LIBRARY */
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -43,38 +38,39 @@ const Project = (props: {
         ));
 
     return (
-        <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={true}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={false}
-            autoPlaySpeed={3000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={['tablet', 'mobile']}
-            // deviceType={this.props.deviceType}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-100-px"
-        >
-
-            <div className={styles.image_carousel_layout}>
-                <span>Item 1</span>
-                <img src={IndoorPositioningSystemProjectImage_1} className={styles.project_image} />
-            </div>
-            <div className={styles.image_carousel_layout}>
-                <span>Item 2</span>
-                <img src={IndoorPositioningSystemProjectImage_2} className={styles.project_image} />
-            </div>
-            <div className={styles.image_carousel_layout}>
-                <span>Item 3</span>
-                <img src={IndoorPositioningSystemProjectImage_3} className={styles.project_image} />
-            </div>
-        </Carousel>
+        <div id="project" className={styles.project_layout}>
+            <span className={styles.project_Heading_1}>PROJECT</span>
+            <Carousel
+                swipeable={false}
+                draggable={false}
+                showDots={true}
+                responsive={responsive}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                customTransition="all .5"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={['tablet', 'mobile']}
+                // deviceType={this.props.deviceType}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-100-px"
+            >
+                {ProjectArrayList.map(
+                    (project_array_list: { image: string; label: string; caption: string; index: number }) => (
+                        <div key={project_array_list.label.toString()} className={styles.image_carousel_layout}>
+                            <div className={styles.text_group}>
+                                <h5>{project_array_list.label}</h5>
+                                <span>{project_array_list.caption}</span>
+                            </div>
+                            <img src={project_array_list.image} className={styles.project_image} />
+                        </div>
+                    ),
+                )}
+            </Carousel>
+        </div>
     );
 };
 

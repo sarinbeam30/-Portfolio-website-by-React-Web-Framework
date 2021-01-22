@@ -1,21 +1,39 @@
+.project_layout {
+    padding-top: 2%;
+    background-color: rgba(255, 165, 0, 0.50);
+}
+
+.project_Heading_1 {
+    letter-spacing: 6.5px;
+    margin: 0 0 0 1.5%;
+    font-weight: bolder;
+}
+
 .image_carousel_layout {
     display: flex;
     flex-direction: column;
     // align-items: flex-start;
-    background-color: orange;
-    padding: 1.5% 0 2.5% 0;
+    // background-color: rgba(255, 165, 0, 0.90);
+    padding: 0 0 2.5% 0;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     width: 100%;
 }
 
-.project_Heading_1 {
-    margin: 0 0 1.5% 0;
+.text_group {
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 44% 0 0 0;
+    opacity: 0.70;
 }
 
 .project_image {
-    width: 55%;
+    margin: 1.5% 0 5.90% 0;
+    width: 65%;
     height: 55%;
+    opacity: 0.95;
 }
