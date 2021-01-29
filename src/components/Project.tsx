@@ -39,7 +39,12 @@ const Project = (props: {
 
     return (
         <div id="project" className={styles.project_layout}>
-            <span className={styles.project_Heading_1}>PROJECT</span>
+            <div className={styles.project_Heading_layout}>
+                <span className={styles.project_Heading_1}>PROJECT</span>
+                <span className={styles.project_Heading_YEAR_4}>
+                    <i>YEAR_4</i>
+                </span>
+            </div>
             <Carousel
                 swipeable={false}
                 draggable={false}

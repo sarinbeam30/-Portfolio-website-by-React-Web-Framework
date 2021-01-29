@@ -1,0 +1,29 @@
+// Initilaize variable
+$padding_contact_layout : 2% 0 1.75% 1.5%;
+
+.contact_layout {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Quicksand', sans-serif;
+    padding: $padding_contact_layout;
+    width: 100%;
+    
+}
+
+.contact_Heading_1 {
+    color: #999;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0 0 1.5% 0;
+    text-transform: uppercase; 
+}
+
+.contact_Heading_2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    margin: 0 0 5% 0;
+    text-transform: uppercase;
+}
