@@ -1,16 +1,29 @@
 // Initilaize variable
 $padding_contact_layout : 2% 0 1.75% 1.5%;
 
+// Initialize Animation
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to   { opacity: 1; transform: translateX(0) }
+}
+
 .contact_layout {
     display: flex;
     flex-direction: column;
     font-family: 'Quicksand', sans-serif;
     padding: $padding_contact_layout;
     width: 100%;
+    background-color: #ffe9ec;
     
 }
 
 .contact_Heading_1 {
+    animation: fadeInLeft .45s;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
     color: #999;
     font-size: 10px;
     font-weight: 500;
@@ -19,11 +32,12 @@ $padding_contact_layout : 2% 0 1.75% 1.5%;
 }
 
 .contact_Heading_2 {
+    animation: fadeInLeft .65s;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 5px;
     line-height: 1.8;
-    margin: 0 0 5% 0;
+    margin: 0 0 3% 0;
     text-transform: uppercase;
 }

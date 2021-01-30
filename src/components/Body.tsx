@@ -4,7 +4,7 @@ import React, { Component, ReactElement } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './Home';
 import About from './About';
-import Project from './Project'; 
+import Project from './Project';
 import Contact from './Contact';
 
 /**  IMPORT IMAGE */
