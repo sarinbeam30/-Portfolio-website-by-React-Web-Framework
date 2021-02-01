@@ -13,18 +13,23 @@ $padding_contact_layout : 2% 0 1.75% 1.5%;
     font-family: 'Quicksand', sans-serif;
     padding: $padding_contact_layout;
     width: 100%;
-    background-color: #ffe9ec;
+    // background-color: #ffe9ec;
+    background-color: pink;
     
 }
 
-.contact_Heading_1 {
-    animation: fadeInLeft .45s;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+// '*' -> select all element inside another element
+// .contact_layout > * + * {
+//     margin-top: 100px;
+// }
 
+// .contact_layout > * + * + *{
+//     margin-top: 100px;
+// }
+
+.contact_Heading_1 {
     color: #999;
+    display: inline-block;
     font-size: 10px;
     font-weight: 500;
     margin: 0 0 1.5% 0;
@@ -32,7 +37,7 @@ $padding_contact_layout : 2% 0 1.75% 1.5%;
 }
 
 .contact_Heading_2 {
-    animation: fadeInLeft .65s;
+    display: inline-block;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
@@ -41,3 +46,4 @@ $padding_contact_layout : 2% 0 1.75% 1.5%;
     margin: 0 0 3% 0;
     text-transform: uppercase;
 }
+
