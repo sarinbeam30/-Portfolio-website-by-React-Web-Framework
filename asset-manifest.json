@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio-website-by-React-Web-Framework/static/css/main.28a88d6b.chunk.css",
+    "main.js": "/Portfolio-website-by-React-Web-Framework/static/js/main.931d24e5.chunk.js",
+    "main.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/main.931d24e5.chunk.js.map",
+    "runtime-main.js": "/Portfolio-website-by-React-Web-Framework/static/js/runtime-main.99cefa40.js",
+    "runtime-main.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/runtime-main.99cefa40.js.map",
+    "static/css/2.6ca22f0c.chunk.css": "/Portfolio-website-by-React-Web-Framework/static/css/2.6ca22f0c.chunk.css",
+    "static/js/2.0ae250fe.chunk.js": "/Portfolio-website-by-React-Web-Framework/static/js/2.0ae250fe.chunk.js",
+    "static/js/2.0ae250fe.chunk.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/2.0ae250fe.chunk.js.map",
+    "static/js/3.eaa671a6.chunk.js": "/Portfolio-website-by-React-Web-Framework/static/js/3.eaa671a6.chunk.js",
+    "static/js/3.eaa671a6.chunk.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/3.eaa671a6.chunk.js.map",
+    "index.html": "/Portfolio-website-by-React-Web-Framework/index.html",
+    "static/css/2.6ca22f0c.chunk.css.map": "/Portfolio-website-by-React-Web-Framework/static/css/2.6ca22f0c.chunk.css.map",
+    "static/css/main.28a88d6b.chunk.css.map": "/Portfolio-website-by-React-Web-Framework/static/css/main.28a88d6b.chunk.css.map",
+    "static/js/2.0ae250fe.chunk.js.LICENSE.txt": "/Portfolio-website-by-React-Web-Framework/static/js/2.0ae250fe.chunk.js.LICENSE.txt",
+    "static/media/IndoorPositioningSystemPeoject_1.afa1bb36.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_1.afa1bb36.png",
+    "static/media/IndoorPositioningSystemPeoject_2.14750e74.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_2.14750e74.png",
+    "static/media/IndoorPositioningSystemPeoject_3.dd1b75e4.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_3.dd1b75e4.png",
+    "static/media/profile-picture.a44027f4.jpg": "/Portfolio-website-by-React-Web-Framework/static/media/profile-picture.a44027f4.jpg",
+    "static/media/styles.css": "/Portfolio-website-by-React-Web-Framework/static/media/revicons.e8746a62.woff",
+    "static/media/wallpaper-1.80f8c4eb.jpg": "/Portfolio-website-by-React-Web-Framework/static/media/wallpaper-1.80f8c4eb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99cefa40.js",
+    "static/css/2.6ca22f0c.chunk.css",
+    "static/js/2.0ae250fe.chunk.js",
+    "static/css/main.28a88d6b.chunk.css",
+    "static/js/main.931d24e5.chunk.js"
+  ]
+}
