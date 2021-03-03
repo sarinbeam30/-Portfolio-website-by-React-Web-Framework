@@ -12,6 +12,12 @@ $wallpaper_1_height : 100%;
     text-align: center;
 }
 
+.hamburger_button {
+    z-index: 3;
+    position: absolute;
+    align-items: left;
+}
+
 .wallpaper_1 {
     max-width: $wallpaper_1_width;
     max-height: $wallpaper_1_height;

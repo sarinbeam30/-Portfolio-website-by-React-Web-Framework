@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import styles from './Stylesheet/AppStyleSheet.module.scss';
 
 import { motion, useCycle } from 'framer-motion';
-import { useDimensions } from './components/SideMenu/use-dimensions';
 
 // const { motion, useMotionValue } = Motion;
 
@@ -21,7 +20,18 @@ const navigation = {
     ],
 };
 
-class App extends Component {
+class App extends Component<any, any> {
+    constructor(props: any) {
+        super(props);
+        this.state = {
+            sidebarOpen: false,
+        };
+    }
+
+    handleViewSidebar = () => {
+        this.setState({ sidebarOpen: !this.state.sidebarOpen });
+    };
+
     public render(): ReactElement {
         const { links } = navigation;
         return (
