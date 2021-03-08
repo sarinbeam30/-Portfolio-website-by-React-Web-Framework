@@ -42,7 +42,7 @@ const Project = (props: {
             <div className={styles.project_Heading_layout}>
                 <span className={styles.project_Heading_1}>PROJECT</span>
                 <span className={styles.project_Heading_YEAR_4}>
-                    <i>YEAR_4</i>
+                    <i>YEAR_4 && YEAR_3</i>
                 </span>
             </div>
             <Carousel
@@ -56,7 +56,7 @@ const Project = (props: {
                 autoPlaySpeed={1000}
                 keyBoardControl={true}
                 customTransition="all .5"
-                transitionDuration={500}
+                transitionDuration={850}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={['tablet', 'mobile']}
                 // deviceType={this.props.deviceType}
