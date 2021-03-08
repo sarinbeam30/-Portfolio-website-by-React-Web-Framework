@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-website-by-React-Web-Framework/static/css/main.28a88d6b.chunk.css",
-    "main.js": "/Portfolio-website-by-React-Web-Framework/static/js/main.931d24e5.chunk.js",
-    "main.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/main.931d24e5.chunk.js.map",
+    "main.js": "/Portfolio-website-by-React-Web-Framework/static/js/main.240e6355.chunk.js",
+    "main.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/main.240e6355.chunk.js.map",
     "runtime-main.js": "/Portfolio-website-by-React-Web-Framework/static/js/runtime-main.99cefa40.js",
     "runtime-main.js.map": "/Portfolio-website-by-React-Web-Framework/static/js/runtime-main.99cefa40.js.map",
     "static/css/2.6ca22f0c.chunk.css": "/Portfolio-website-by-React-Web-Framework/static/css/2.6ca22f0c.chunk.css",
@@ -17,6 +17,10 @@
     "static/media/IndoorPositioningSystemPeoject_1.afa1bb36.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_1.afa1bb36.png",
     "static/media/IndoorPositioningSystemPeoject_2.14750e74.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_2.14750e74.png",
     "static/media/IndoorPositioningSystemPeoject_3.dd1b75e4.png": "/Portfolio-website-by-React-Web-Framework/static/media/IndoorPositioningSystemPeoject_3.dd1b75e4.png",
+    "static/media/TeamSoftwareProject_1.362d4cc9.png": "/Portfolio-website-by-React-Web-Framework/static/media/TeamSoftwareProject_1.362d4cc9.png",
+    "static/media/TeamSoftwareProject_2.6d121ecd.png": "/Portfolio-website-by-React-Web-Framework/static/media/TeamSoftwareProject_2.6d121ecd.png",
+    "static/media/TeamSoftwareProject_3.8e8adde5.png": "/Portfolio-website-by-React-Web-Framework/static/media/TeamSoftwareProject_3.8e8adde5.png",
+    "static/media/TeamSoftwareProject_4.198ff973.png": "/Portfolio-website-by-React-Web-Framework/static/media/TeamSoftwareProject_4.198ff973.png",
     "static/media/profile-picture.a44027f4.jpg": "/Portfolio-website-by-React-Web-Framework/static/media/profile-picture.a44027f4.jpg",
     "static/media/styles.css": "/Portfolio-website-by-React-Web-Framework/static/media/revicons.e8746a62.woff",
     "static/media/wallpaper-1.80f8c4eb.jpg": "/Portfolio-website-by-React-Web-Framework/static/media/wallpaper-1.80f8c4eb.jpg"
@@ -26,6 +30,6 @@
     "static/css/2.6ca22f0c.chunk.css",
     "static/js/2.0ae250fe.chunk.js",
     "static/css/main.28a88d6b.chunk.css",
-    "static/js/main.931d24e5.chunk.js"
+    "static/js/main.240e6355.chunk.js"
   ]
 }
