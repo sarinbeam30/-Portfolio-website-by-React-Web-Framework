@@ -45,7 +45,14 @@ export default class Home extends Component<any, any> {
                         <h2 className={styles.home_text}>Sarin Wanichwasin (Beam)</h2>
                         <p>
                             <button type="button" className="btn btn-outline-dark mt-4">
-                                DOWNLOAD_CV
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={styles.download_button}
+                                    href="https://drive.google.com/file/d/16UsZDJ0GZiMw0um-1ZA8RxJraeB7h5QF/view?usp=sharing"
+                                >
+                                    DOWNLOAD_CV
+                                </a>
                                 <FontAwesomeIcon className="ml-3" icon={['fas', 'file-download']} />
                             </button>
                         </p>
