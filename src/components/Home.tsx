@@ -49,7 +49,7 @@ export default class Home extends Component<any, any> {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={styles.download_button}
-                                    href="https://drive.google.com/file/d/16UsZDJ0GZiMw0um-1ZA8RxJraeB7h5QF/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1L0DEnHNpKBaWnwWveN0yzi0zQmMrjsBB/view?usp=sharing"
                                 >
                                     DOWNLOAD_CV
                                 </a>
